@@ -1,0 +1,9 @@
+{
+  "name": "com.hassakulab.randoms",
+  "displayName": "HassakuLab.Randoms",
+  "version": "0.0.1",
+  "description": "Implementation of random number generator",
+  "dependencies": {
+    
+  }
+}

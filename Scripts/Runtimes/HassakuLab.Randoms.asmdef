@@ -1,0 +1,14 @@
+{
+    "name": "HassakuLab.Randoms",
+    "rootNamespace": "HassakuLab.Randoms",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
