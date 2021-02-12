@@ -13,7 +13,7 @@ namespace HassakuLab.Randoms
     public class XorShift128 : RandomGenerator
     {
         private uint grandSeed;
-        private uint[] seed = new uint[4];
+        private readonly uint[] seed = new uint[4];
 
         /// <summary>
         /// コンストラクタ
