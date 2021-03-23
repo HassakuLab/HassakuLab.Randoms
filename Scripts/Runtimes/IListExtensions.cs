@@ -4,12 +4,12 @@ using System.Linq;
 namespace HassakuLab.Randoms
 {
     /// <summary>
-    /// IListŠg’£
+    /// IListæ‹¡å¼µ
     /// </summary>
     public static partial class IListExtensions
     {
         /// <summary>
-        /// Fisher-YatesƒVƒƒƒbƒtƒ‹ ‚ÌŽÀ‘•
+        /// Fisher-Yatesã‚·ãƒ£ãƒƒãƒ•ãƒ«
         /// </summary>
         public static IList<T> Shuffle<T>(this IList<T> list, RandomGenerator rng)
         {

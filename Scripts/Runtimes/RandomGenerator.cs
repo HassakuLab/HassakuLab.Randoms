@@ -9,22 +9,22 @@ namespace HassakuLab.Randoms
     public abstract class RandomGenerator
     {
         /// <summary>
-        /// ƒV[ƒh’l
+        /// ã‚·ãƒ¼ãƒ‰
         /// </summary>
         public abstract uint Seed {
             get; set;
         }
 
         /// <summary>
-        /// [0, uint.MaxValue]‚Ì—”‚ğæ“¾‚µ‚Ü‚·
+        /// [0, uint.MaxValue]ã®ä¹±æ•°ã‚’å–å¾—ã—ã¾ã™
         /// </summary>
-        /// <returns>—”’l[0U, unit.MaxValue]</returns>
+        /// <returns>ä¹±æ•°å€¤[0U, unit.MaxValue]</returns>
         public abstract uint GetUint();
 
         /// <summary>
-        /// floatŒ^‚Ì—”’l‚ğæ“¾‚µ‚Ü‚·
+        /// floatã®ä¹±æ•°å€¤ã‚’å–å¾—ã—ã¾ã™
         /// </summary>
-        /// <returns>FloatŒ^—”’l[0f, 1f]</returns>
+        /// <returns>Floatä¹±æ•°[0f, 1f]</returns>
         public float GetFloat()
         {
             uint floatBits = (GetUint() >> 9) | 0x3f800000;
@@ -32,11 +32,11 @@ namespace HassakuLab.Randoms
         }
 
         /// <summary>
-        /// floatŒ^‚Åw’è‚µ‚½”ÍˆÍ“à‚Ì—”’l‚ğæ“¾‚µ‚Ü‚·
+        /// floatã®ä¹±æ•°å€¤ã‚’ç¯„å›²ã‚’æŒ‡å®šã—ã¦å–å¾—ã—ã¾ã™
         /// </summary>
-        /// <param name="min">Å¬’l</param>
-        /// <param name="max">Å‘å’l</param>
-        /// <returns>floatŒ^—”’l[min, max]</returns>
+        /// <param name="min">æœ€å°å€¤</param>
+        /// <param name="max">æœ€å¤§å€¤</param>
+        /// <returns>floatä¹±æ•°[min, max]</returns>
         public float Range(float min, float max)
         {
             float actualMin = Mathf.Min(min, max);
@@ -46,11 +46,11 @@ namespace HassakuLab.Randoms
         }
 
         /// <summary>
-        /// intŒ^‚Åw’è‚µ‚½”ÍˆÍ“à‚Ì—”’l‚ğæ“¾‚µ‚Ü‚·
+        /// intã®ä¹±æ•°å€¤ã‚’ç¯„å›²ã‚’æŒ‡å®šã—ã¦å–å¾—ã—ã¾ã™
         /// </summary>
-        /// <param name="min">Å¬’l</param>
-        /// <param name="max">Å‘å’l</param>
-        /// <returns>intŒ^—”’l[min, max-1]</returns>
+        /// <param name="min">æœ€å°å€¤</param>
+        /// <param name="max">æœ€å¤§å€¤+1</param>
+        /// <returns>intå‹ã®ä¹±æ•°[min, max-1]</returns>
         public int Range(int min, int max)
         {
             int actualMin = Mathf.Min(min, max);
